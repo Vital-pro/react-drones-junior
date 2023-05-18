@@ -12,7 +12,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
         <div className={`${styles.drawerOverlay} ${opened ? styles.overlayVisible : ''}`}>
       <div className={styles.drawer}>
         <h2 className='drawerTitle'>
-          Cart
+          Корзина
           <img
             className='cartItemRemove'
             src='/img/btn-remove.svg'
@@ -111,18 +111,18 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
         <div className='cartTotalBlock'>
           <ul className='cartItemsList'>
             <li className='cartTotalBlockItem'>
-              <span>Total:</span>
+              <span>Итого:</span>
               <div></div>
-              <b>{totalPrice} rub.</b>
+              <b>{totalPrice} руб.</b>
             </li>
             <li className='cartTotalBlockItem'>
-              <span>Tax 5%:</span>
+              <span>Налог 5%:</span>
               <div></div>
-              <b>{totalPrice /100 * 5} rub.</b>
+              <b>{totalPrice /100 * 5} руб.</b>
             </li>
           </ul>
           <button className='greenButton'>
-            Create an Order <img src='/img/arrow.svg' alt='Arrow' />
+            Создать заказ <img src='/img/arrow.svg' alt='Arrow' />
           </button>
         </div>
       </div>

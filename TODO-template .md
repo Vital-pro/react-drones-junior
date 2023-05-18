@@ -121,4 +121,18 @@ const { favorites } = React.useContext(AppContext);
 arr.reduce((sum, obj) => obj.price + sum, 0)
 const totalPrice = cartItems.reduce((sum, obj) => obj.price + sum, 0)
 
+Atom Background Modifird*****
 
+# git push origin master --force
+git push origin master --force
+
+# deploy How to deploy React App to GitHub Pages
+https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+
+# В папке public сохраняем все статические файлы - это те, которые не меняются 
+
+# Разное...
+
+АйТи Синяк https://www.youtube.com/watch?v=OtAlPwW8DNU o React key
+
+https://stackblitz.com/ площадка для тренировок написания кода онлайн
