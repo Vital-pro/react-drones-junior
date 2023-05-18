@@ -126,8 +126,24 @@ Atom Background Modifird*****
 # git push origin master --force
 git push origin master --force
 
-# deploy How to deploy React App to GitHub Pages
-https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+# deploy. How to deploy React App to GitHub Pages
+repository -> settings -> pages -> select Master -> Save. Reload the page.
+Create link Your site is live at https://vital-pro.github.io/react-drones-junior/
+ - then go - > https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f -> npm install gh-pages.
+ Утилита gh-pages скачивается в node_modules. 
+
+ - then -> change "scripts": {
+//...
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
+
+- then ->  "homepage": "https://vital-pro.github.io/react-drones-junior", установим, например, после "private": true,
+Эта ссылка как раз и есть на вновь созданную страницу. / - слэш в конце уберем.
+
+Сделаем опять:
+git add .
+
 
 # В папке public сохраняем все статические файлы - это те, которые не меняются 
 
@@ -136,7 +152,3 @@ https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 АйТи Синяк https://www.youtube.com/watch?v=OtAlPwW8DNU o React key
 
 https://stackblitz.com/ площадка для тренировок написания кода онлайн
-
-
-body background-color: #e7f6ff; (#66bdf1)
-wrapper 
