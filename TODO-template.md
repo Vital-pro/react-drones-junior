@@ -14,4 +14,6 @@ npm install node-sass@4.14.1 Обязательно пишем какая нуж
 - затем переименовываем index.css в index.scss. А в index.js импортим
   import './index.scss';
 
+# В папке src создаем новую папку components. В ней -> новый компонент. Назовем его Card
+
 
