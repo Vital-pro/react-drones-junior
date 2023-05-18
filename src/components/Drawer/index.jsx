@@ -59,7 +59,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
         
           {/* <div className='cartItem'>
             <div
-              style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }}
+              style={{ backgroundImage: 'url(/img/drones/1.jpg)' }}
               className='cartItemImg'
             ></div>
             <div className='cartItemBlock'>
@@ -74,7 +74,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
           </div> */}
           {/* <div className='cartItem'>
             <div
-              style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }}
+              style={{ backgroundImage: 'url(/img/drones/1.jpg)' }}
               className='cartItemImg'
             ></div>
             <div className='cartItemBlock'>
@@ -90,7 +90,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
 
           <div className='cartItem'>
             <div
-              style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }}
+              style={{ backgroundImage: 'url(/img/drones/1.jpg)' }}
               className='cartItemImg'
             ></div>
             <div className='cartItemBlock'>
@@ -118,7 +118,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
             <li className='cartTotalBlockItem'>
               <span>Налог 5%:</span>
               <div></div>
-              <b>{totalPrice /100 * 5} руб.</b>
+              <b>{Math.round(totalPrice /100 * 5)} руб.</b>
             </li>
           </ul>
           <button className='greenButton'>

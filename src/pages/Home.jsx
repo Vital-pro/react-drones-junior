@@ -52,7 +52,7 @@ function Home({items, cartItems, searchValue, setSearchValue, onAddToCart, isLoa
               // onChange={onChangeSearchInput} или так1
               value={searchValue}
               className='contentSearchInpit'
-              placeholder='Search...'
+              placeholder='Поиск...'
             />
           </div>
         </div>

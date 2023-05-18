@@ -15,44 +15,44 @@ export const AppContext = React.createContext({}); // спец React-конст�
 
 // const arr = [
 //   {
-//     "title": 'Мужские Кроссовки Nike Blazer Mid Suede',
-//     "price": 12999,
-//     "imageUrl": '/img/sneakers/1.jpg',
+//     title: 'Супер- Агродрон AGR A22 new',
+//     price: 15999,
+//     imageUrl: 'img/drones/1.jpg',
 //   },
 //   {
-//     "title": 'Мужские Кроссовки Nike Air Max 270',
-//     "price": 15600,
-//     "imageUrl": '/img/sneakers/2.jpg',
+//     title: 'Дрон- Картограф STS M8',
+//     price: 18200,
+//     imageUrl: 'img/drones/2.jpg',
 //   },
 //   {
-//     "title": 'Мужские Кроссовки Nike Blazer Mid Suede',
-//     "price": 8499,
-//     "imageUrl": '/img/sneakers/3.jpg',
+//     title: 'Супер- Агродрон AGR A22 new',
+//     price: 15999,
+//     imageUrl: 'img/drones/3.jpg',
 //   },
 //   {
-//     "title": 'Кроссовки Puma X Aka Boku Future Rider',
-//     "price": 8999,
-//     "imageUrl": '/img/sneakers/4.jpg',
+//     title: 'Дрон - Картограф STS M1550',
+//     price: 15859,
+//     imageUrl: 'img/drones/4.jpg',
 //   },
 //   {
-//     "title": 'Мужские Кроссовки Nike Blazer Mid Suede',
-//     "price": 10200,
-//     "imageUrl": '/img/sneakers/5.jpg',
+//     title: 'Супер- Агродрон AGR A22 new',
+//     price: 15999,
+//     imageUrl: 'img/drones/5.jpg',
 //   },
 //   {
-//     "title": 'Мужские Кроссовки Nike Air Max 270',
-//     "price": 11470,
-//     "imageUrl": '/img/sneakers/6.jpg',
+//     title: 'Дрон - Картограф STS M1550',
+//     price: 15859,
+//     imageUrl: 'img/drones/6.jpg',
 //   },
 //   {
-//     "title": 'Мужские Кроссовки Nike Blazer Mid Suede',
-//     "price": 6750,
-//     "imageUrl": '/img/sneakers/7.jpg',
+//     title: 'Супер- Агродрон AGR A22 new',
+//     price: 15999,
+//     imageUrl: 'img/drones/7.jpg',
 //   },
 //   {
-//     "title": 'Кроссовки Puma X Aka Boku Future Rider',
-//     "price": 18270,
-//     "imageUrl": '/img/sneakers/8.jpg',
+//     title: 'Дрон- Картограф STS M8',
+//     price: 18200,
+//     imageUrl: 'img/drones/8.jpg',
 //   },
 // ];
 
@@ -112,17 +112,21 @@ function App() {
     try {
       if (cartItems.find((item) => Number(item.id) === Number(obj.id))) {
         setcartItems((prev) =>
-        prev.filter((item) => Number(item.id) !== Number(obj.id)));
+          prev.filter((item) => Number(item.id) !== Number(obj.id))
+        );
         await axios.delete(
-          `https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart/${obj.id}`);
+          `https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart/${obj.id}`
+        );
       } else {
         await axios.post(
-          'https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart', obj);
+          'https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart',
+          obj
+        );
         setcartItems((prev) => [...prev, obj]);
       }
     } catch (error) {
       alert('Ошибка при добавлении в корзину');
-      console.error(error)
+      console.error(error);
     }
   };
 
@@ -150,9 +154,11 @@ function App() {
     console.log(id);
     try {
       axios.delete(`https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart/${id}`);
-      setcartItems((prev) => prev.filter((item) => Number(item.id )!== Number(id)));
+      setcartItems((prev) =>
+        prev.filter((item) => Number(item.id) !== Number(id))
+      );
     } catch (error) {
-      alert('Ошибка при удалении из корзины')
+      alert('Ошибка при удалении из корзины');
       console.error(error);
     }
   };

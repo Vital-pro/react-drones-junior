@@ -16,7 +16,7 @@ function Header(props) {
         <div className='headerLeft'>
           <img className='headerLogo' src='/img/logo.png' alt='Logo' />
           <div>
-            <h3 className='headerTitle'>React drones</h3>
+            <h3 className='headerTitle'>drones react</h3>
             <p className='headerText'>Магазин беспилотных дронов</p>
           </div>
         </div>

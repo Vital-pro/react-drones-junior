@@ -60,7 +60,7 @@ function Card({
         width='100%'
         height={135}
         src={imageUrl}
-        alt='Sneakers'
+        alt='Drones'
       />
       <h5 className={cardStyles.cardTitle}>{title}</h5>
       <div className={cardStyles.cardBottom}>

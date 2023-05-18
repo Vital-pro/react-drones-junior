@@ -136,3 +136,7 @@ https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
 АйТи Синяк https://www.youtube.com/watch?v=OtAlPwW8DNU o React key
 
 https://stackblitz.com/ площадка для тренировок написания кода онлайн
+
+
+body background-color: #e7f6ff; (#66bdf1)
+wrapper 
