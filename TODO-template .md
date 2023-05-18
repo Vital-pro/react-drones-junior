@@ -141,8 +141,13 @@ Create link Your site is live at https://vital-pro.github.io/react-drones-junior
 - then ->  "homepage": "https://vital-pro.github.io/react-drones-junior", установим, например, после "private": true,
 Эта ссылка как раз и есть на вновь созданную страницу. / - слэш в конце уберем.
 
-Сделаем опять:
+ - Сделаем опять:
 git add .
+git commit -m "deploy"
+git push origin master
+
+ - Create build "predeploy":
+npm run build
 
 
 # В папке public сохраняем все статические файлы - это те, которые не меняются 
