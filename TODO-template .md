@@ -149,7 +149,7 @@ git commit -m "deploy"
 git push origin master
 
  - Create build:
-npm run deploy
+npm run deploy (!!) команда для сборки проекта
 
  - next:
 select in branch gh-pages -> Save.
