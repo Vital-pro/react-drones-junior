@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-drones-junior/static/css/main.9404473d.css",
-    "main.js": "/react-drones-junior/static/js/main.ffb098f9.js",
+    "main.js": "/react-drones-junior/static/js/main.e7024cf5.js",
     "index.html": "/react-drones-junior/index.html",
     "main.9404473d.css.map": "/react-drones-junior/static/css/main.9404473d.css.map",
-    "main.ffb098f9.js.map": "/react-drones-junior/static/js/main.ffb098f9.js.map"
+    "main.e7024cf5.js.map": "/react-drones-junior/static/js/main.e7024cf5.js.map"
   },
   "entrypoints": [
     "static/css/main.9404473d.css",
-    "static/js/main.ffb098f9.js"
+    "static/js/main.e7024cf5.js"
   ]
 }
