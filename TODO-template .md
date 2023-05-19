@@ -129,7 +129,9 @@ git push origin master --force
 # deploy. How to deploy React App to GitHub Pages
 repository -> settings -> pages -> select Master -> Save. Reload the page.
 Create link Your site is live at https://vital-pro.github.io/react-drones-junior/
- - then go - > https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f -> npm install gh-pages.
+ - then go - > https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f -> 
+
+ npm install gh-pages
  Утилита gh-pages скачивается в node_modules. 
 
  - then -> change "scripts": {
@@ -139,7 +141,7 @@ Create link Your site is live at https://vital-pro.github.io/react-drones-junior
 }
 
 - then ->  "homepage": "https://vital-pro.github.io/react-drones-junior", установим, например, после "private": true,
-Эта ссылка как раз и есть на вновь созданную страницу. / - слэш в конце уберем.
+Эта ссылка как раз и есть на вновь созданную страницу. НО / - слэш в конце уберем.
 
  - Сделаем опять:
 git add .
