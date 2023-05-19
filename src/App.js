@@ -68,8 +68,7 @@ function App() {
     async function fetchData() {
       try {
         const cartResponse = await axios.get(
-          // 'https://646721c6ba7110b663b02292.mockapi.io/cart'
-          'https://drones.free.beeceptor.com/cart'
+          'https://646721c6ba7110b663b02292.mockapi.io/cart'
         );
         // .then((res) => {
         //   setcartItems(res.data);
@@ -84,8 +83,7 @@ function App() {
         //   });    // то же самое с json()
 
         const itemResponse = await axios.get(
-          // 'https://646721c6ba7110b663b02292.mockapi.io'
-          'https://drones.free.beeceptor.com/items'
+          'https://646721c6ba7110b663b02292.mockapi.io'
         );
         // .then((res) => {
         //   setItems(res.data);
@@ -117,11 +115,11 @@ function App() {
           prev.filter((item) => Number(item.id) !== Number(obj.id))
         );
         await axios.delete(
-          `https://drones.free.beeceptor.com/cart/${obj.id}`
+          `https://646721c6ba7110b663b02292.mockapi.io/cart/${obj.id}`
         );
       } else {
         await axios.post(
-          'https://drones.free.beeceptor.com/cart',
+          'https://646721c6ba7110b663b02292.mockapi.io/cart',
           obj
         );
         setcartItems((prev) => [...prev, obj]);
@@ -155,7 +153,7 @@ function App() {
   const onRemoveItem = (id) => {
     console.log(id);
     try {
-      axios.delete(`https://drones.free.beeceptor.com/cart/${id}`);
+      axios.delete(`https://646721c6ba7110b663b02292.mockapi.io/cart/${id}`);
       setcartItems((prev) =>
         prev.filter((item) => Number(item.id) !== Number(id))
       );
