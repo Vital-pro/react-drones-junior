@@ -88,7 +88,11 @@ function App() {
           'https://646721c6ba7110b663b02292.mockapi.io', {
             headers: {'content-type':'application/json'},
           }
-        );
+        ).then(res => {
+          if(res.ok) {
+            return res.json()
+          }
+        });
         // .then((res) => {
         //   setItems(res.data);
         // });
