@@ -68,7 +68,9 @@ function App() {
     async function fetchData() {
       try {
         const cartResponse = await axios.get(
-          'https://646721c6ba7110b663b02292.mockapi.io/cart'
+          'https://646721c6ba7110b663b02292.mockapi.io/cart', {
+            headers: {'content-type':'application/json'},
+          }
         );
         // .then((res) => {
         //   setcartItems(res.data);
@@ -83,7 +85,9 @@ function App() {
         //   });    // то же самое с json()
 
         const itemResponse = await axios.get(
-          'https://646721c6ba7110b663b02292.mockapi.io'
+          'https://646721c6ba7110b663b02292.mockapi.io', {
+            headers: {'content-type':'application/json'},
+          }
         );
         // .then((res) => {
         //   setItems(res.data);
