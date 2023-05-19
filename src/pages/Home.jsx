@@ -36,14 +36,14 @@ function Home({items, cartItems, searchValue, setSearchValue, onAddToCart, isLoa
           <div className='contentSearch'>
             <img
               className='contentSearchImg'
-              src='/img/search.svg'
+              src='img/search.svg'
               alt='Search'
             />
             {searchValue && (
               <img
                 onClick={() => setSearchValue('')}
                 className='cartItemRemove inputRemove'
-                src='/img/btn-remove.svg'
+                src='img/btn-remove.svg'
                 alt='Close'
               />
             )}

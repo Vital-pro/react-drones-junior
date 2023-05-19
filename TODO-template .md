@@ -146,8 +146,12 @@ git add .
 git commit -m "deploy"
 git push origin master
 
- - Create build "predeploy":
-npm run build
+ - Create build:
+npm run deploy
+
+ - next:
+select in branch gh-pages -> Save.
+** Если нужно, уберем '/' в начале -> Route -> АРР
 
 
 # В папке public сохраняем все статические файлы - это те, которые не меняются 

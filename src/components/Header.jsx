@@ -14,7 +14,7 @@ function Header(props) {
     <header>
       <Link to='/'>
         <div className='headerLeft'>
-          <img className='headerLogo' src='/img/logo.png' alt='Logo' />
+          <img className='headerLogo' src='img/logo.png' alt='Logo' />
           <div>
             <h3 className='headerTitle'>drones react</h3>
             <p className='headerText'>Магазин беспилотных дронов</p>
@@ -23,17 +23,17 @@ function Header(props) {
       </Link>
       <ul className='headerRight' >
         <li onClick={props.onClickCart}>
-          <img className='headerCart' src='/img/cart.svg' alt='Корзина' />
+          <img className='headerCart' src='img/cart.svg' alt='Корзина' />
           <span className='headerRightSpan'>{totalPrice} руб.</span>
         </li>
         <li>
           <Link to='/favorites'>
-          <img className='headerUser' src='/img/heart.svg' alt='Закладки' />
+          <img className='headerUser' src='img/heart.svg' alt='Закладки' />
           </Link>
         </li>
         <li>
         <Link to='/orders'>
-          <img className='headerUser' src='/img/user.svg' alt='Пользователь' />
+          <img className='headerUser' src='img/user.svg' alt='Пользователь' />
           </Link>
         </li>
       </ul>
