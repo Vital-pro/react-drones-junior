@@ -68,7 +68,7 @@ function App() {
     async function fetchData() {
       try {
         const cartResponse = await axios.get(
-          'https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart'
+          'https://646721c6ba7110b663b02292.mockapi.io/cart'
         );
         // .then((res) => {
         //   setcartItems(res.data);
@@ -83,7 +83,7 @@ function App() {
         //   });    // то же самое с json()
 
         const itemResponse = await axios.get(
-          'https://645e8a2d12e0a87ac0f2d421.mockapi.io/items'
+          'https://646721c6ba7110b663b02292.mockapi.io'
         );
         // .then((res) => {
         //   setItems(res.data);
@@ -115,11 +115,11 @@ function App() {
           prev.filter((item) => Number(item.id) !== Number(obj.id))
         );
         await axios.delete(
-          `https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart/${obj.id}`
+          `https://646721c6ba7110b663b02292.mockapi.io/cart/${obj.id}`
         );
       } else {
         await axios.post(
-          'https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart',
+          'https://646721c6ba7110b663b02292.mockapi.io/cart',
           obj
         );
         setcartItems((prev) => [...prev, obj]);
@@ -153,7 +153,7 @@ function App() {
   const onRemoveItem = (id) => {
     console.log(id);
     try {
-      axios.delete(`https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart/${id}`);
+      axios.delete(`https://646721c6ba7110b663b02292.mockapi.io/cart/${id}`);
       setcartItems((prev) =>
         prev.filter((item) => Number(item.id) !== Number(id))
       );
@@ -197,7 +197,7 @@ function App() {
 
         <Routes>
           <Route
-            path='/'
+            path=''
             exact
             element={
               <Home
@@ -214,7 +214,7 @@ function App() {
 
         <Routes>
           <Route
-            path='/favorites'
+            path='favorites'
             exact
             element={
               <Favorites
@@ -228,7 +228,7 @@ function App() {
 
         <Routes>
           <Route
-            path='/orders'
+            path='orders'
             exact
             element={
               <Orders

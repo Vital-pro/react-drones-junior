@@ -12,7 +12,7 @@ function Orders() {
   React.useEffect(() => {
     (async () => {
       try {
-        const {data} = await axios.get('https://645e8a2d12e0a87ac0f2d421.mockapi.io/cart');
+        const {data} = await axios.get('https://646721c6ba7110b663b02292.mockapi.io/cart');
         // console.log(data.map((obj) => obj.itens).flat()); // ! объединить массив массивов 1 вар
         // console.log(data.reduce((prev, obj) => [...prev, obj], [])); // ! объединить массив массивов 2 вар
         setOrders(data.reduce((prev, obj) => [...prev, obj], []))
