@@ -68,8 +68,8 @@ function App() {
     async function fetchData() {
       try {
         const cartResponse = await axios.get(
-          'https://646721c6ba7110b663b02292.mockapi.io/cart'
-          // 'https://drones.free.beeceptor.com/cart'
+          // 'https://646721c6ba7110b663b02292.mockapi.io/cart'
+          'https://drones.free.beeceptor.com/cart'
         );
         // .then((res) => {
         //   setcartItems(res.data);
@@ -84,8 +84,8 @@ function App() {
         //   });    // то же самое с json()
 
         const itemResponse = await axios.get(
-          'https://646721c6ba7110b663b02292.mockapi.io/items'
-          // 'https://drones.free.beeceptor.com/items'
+          // 'https://646721c6ba7110b663b02292.mockapi.io'
+          'https://drones.free.beeceptor.com/items'
         );
         // .then((res) => {
         //   setItems(res.data);
@@ -117,11 +117,11 @@ function App() {
           prev.filter((item) => Number(item.id) !== Number(obj.id))
         );
         await axios.delete(
-          `https://646721c6ba7110b663b02292.mockapi.io/cart/${obj.id}`
+          `https://drones.free.beeceptor.com/cart/${obj.id}`
         );
       } else {
         await axios.post(
-          'https://646721c6ba7110b663b02292.mockapi.io/cart',
+          'https://drones.free.beeceptor.com/cart',
           obj
         );
         setcartItems((prev) => [...prev, obj]);
@@ -155,7 +155,7 @@ function App() {
   const onRemoveItem = (id) => {
     console.log(id);
     try {
-      axios.delete(`https://646721c6ba7110b663b02292.mockapi.io/cart/${id}`);
+      axios.delete(`https://drones.free.beeceptor.com/cart/${id}`);
       setcartItems((prev) =>
         prev.filter((item) => Number(item.id) !== Number(id))
       );
