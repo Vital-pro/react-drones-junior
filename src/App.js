@@ -83,7 +83,7 @@ function App() {
         //   });    // то же самое с json()
 
         const itemResponse = await axios.get(
-          'https://646721c6ba7110b663b02292.mockapi.io'
+          'https://646721c6ba7110b663b02292.mockapi.io/items'
         );
         // .then((res) => {
         //   setItems(res.data);
